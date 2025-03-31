@@ -1,0 +1,100 @@
+name: Deploy Development to Staging
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch Latest Changes
+        run: |
+          git fetch origin
+          git checkout Staging
+          git pull origin Staging
+          git merge --no-commit --no-ff origin/Development || true
+          git reset
+
+          echo -e "\n🔍 Checking Git Status Before Processing:"
+          git status
+
+      - name: Add Allowed Files Manually
+        run: |
+          echo -e "\n🔹 Excluding settings_data.json"
+          git reset HEAD config/settings_data.json || true
+          git checkout -- config/settings_data.json || true
+
+          echo -e "\n🔹 Checking for new JSON files in templates/ (Added 'A')..."
+          new_json_files=$(git diff --name-only origin/Development -- 'templates/*.json' || true)
+          if [[ -n "$new_json_files" ]]; then
+            echo -e "✅ New JSON files found:\n$new_json_files"
+            echo "$new_json_files" | xargs -r git add
+          else
+            echo "❌ No new JSON files found."
+          fi
+
+          echo -e "\n🔹 Checking for modified JSON files in templates/ (Should be ignored)..."
+          modified_json_files=$(git diff --name-only -- 'templates/*.json' || true)
+          if [[ -n "$modified_json_files" ]]; then
+            echo -e "🚫 Ignoring modified JSON files:\n$modified_json_files"
+            echo "$modified_json_files" | xargs -r git restore --staged
+            echo "$modified_json_files" | xargs -r git checkout --
+          else
+            echo "✅ No modified JSON files found."
+          fi
+
+          echo -e "\n🔹 Allowing all .liquid file changes in templates/..."
+          liquid_files=$(git diff --name-only origin/Development -- 'templates/*.liquid' || true)
+          if [[ -n "$liquid_files" ]]; then
+            echo -e "✅ Liquid files found:\n$liquid_files"
+            echo "$liquid_files" | xargs -r git add
+          else
+            echo "❌ No .liquid file changes found."
+          fi
+
+          echo -e "\n🔹 Allowing ALL changes in sections/, assets/, layout/, snippets/, and locales/..."
+          allowed_files=$(git diff --name-only origin/Development -- sections/ assets/ layout/ snippets/ locales/ || true)
+          if [[ -n "$allowed_files" ]]; then
+            echo -e "✅ Allowed changes found:\n$allowed_files"
+            echo "$allowed_files" | xargs -r git add
+          else
+            echo "❌ No changes found in allowed folders."
+          fi
+
+          echo -e "\n🔹 Allowing ALL modified changes in sections/, assets/, layout/, snippets/, and locales/..."
+          modified_files=$(git diff --name-only -- sections/ assets/ layout/ snippets/ locales/ || true)
+          if [[ -n "$modified_files" ]]; then
+            echo -e "✅ Allowed changes found:\n$modified_files"
+            echo "$modified_files" | xargs -r git add
+          else
+            echo "❌ No modified changes found in allowed folders."
+          fi
+
+          echo -e "\n🔹 Adding settings_schema.json"
+          git add config/settings_schema.json
+
+          echo -e "\n🔍 Checking Git Status Before Commit:"
+          git status
+
+          echo -e "\n🔹 Committing and pushing changes..."
+          git commit -m "Deploy: Selective sync from Development to Staging" || echo "✅ No code changes to commit"
+          git push origin Staging
+
+      - name: Debug Git Log
+        run: |
+          echo -e "\n🔍 Showing Last 5 Git Commits:"
+          git log -5 --oneline
