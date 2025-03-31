@@ -217,6 +217,43 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "collage_PAWdGc": {
+      "type": "collage",
+      "blocks": {
+        "image_QPRjeB": {
+          "type": "image",
+          "settings": {}
+        },
+        "product_N7hm3i": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "collection_4cMrFA": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_QPRjeB",
+        "product_N7hm3i",
+        "collection_4cMrFA"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -224,6 +261,7 @@
     "featured_collection",
     "multicolumn_gNK4Hn",
     "rich_text_KhW4a3",
-    "image_banner_KAUYaL"
+    "image_banner_KAUYaL",
+    "collage_PAWdGc"
   ]
 }
