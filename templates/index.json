@@ -171,48 +171,6 @@
         "padding_bottom": 52
       }
     },
-    "rich_text_qnjkLJ": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_LWBGjp": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_mGHA3J": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_YREkbU": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_LWBGjp",
-        "text_mGHA3J",
-        "button_YREkbU"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "featured_blog_pEFVhk": {
       "type": "featured-blog",
       "settings": {
@@ -229,6 +187,39 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "newsletter_ExadG7": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_hPJBfJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_ALKHCG": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_3aiEar": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_hPJBfJ",
+        "paragraph_ALKHCG",
+        "email_form_3aiEar"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -236,7 +227,7 @@
     "featured_collection",
     "multicolumn_gNK4Hn",
     "rich_text_KhW4a3",
-    "rich_text_qnjkLJ",
-    "featured_blog_pEFVhk"
+    "featured_blog_pEFVhk",
+    "newsletter_ExadG7"
   ]
 }
