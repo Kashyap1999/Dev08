@@ -19,7 +19,7 @@ jobs:
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git reset --hard HEAD~1  # Move to previous commit
-          git push origin production --force  # Force push to production
+          git push origin Production --force  # Force push to production
 
       - name: Confirm Reversion
         run: git log -1 --oneline
