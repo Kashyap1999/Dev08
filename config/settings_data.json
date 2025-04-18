@@ -158,6 +158,15 @@
         "type": "shopify://apps/mbc-bundles/blocks/mbc-bundles-core-snippet/57c94b78-e464-47f4-9403-7ffcfcddb33f",
         "disabled": false,
         "settings": {}
+      },
+      "9258473194686202715": {
+        "type": "shopify://apps/wishit-theme-sections-library/blocks/app-embed/75718c87-6fbb-4711-96bb-441b314b29ba",
+        "disabled": true,
+        "settings": {
+          "custom_script": "<!-- You can copy paste JS/CSS/HTML scripts here -->",
+          "custom_css": "/* Enter your Custom CSS below without style tag */",
+          "custom_js": "/* Enter your Custom Javascript code below without script tag */"
+        }
       }
     },
     "color_schemes": {
