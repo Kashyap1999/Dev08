@@ -142,31 +142,15 @@
     },
     "content_for_index": [],
     "blocks": {
-      "9776720720251544092": {
-        "type": "shopify://apps/helium-customer-fields/blocks/app-embed/bab58598-3e6a-4377-aaaa-97189b15f131",
-        "disabled": false,
-        "settings": {
-          "registration_form_id": "2qtw58",
-          "edit_account_form_id": "",
-          "edit_account_link_text": "Edit account",
-          "edit_account_heading": "Edit account",
-          "edit_account_back_link_text": "Back to account",
-          "enable_js_api": false
-        }
-      },
-      "1909789295049107559": {
-        "type": "shopify://apps/mbc-bundles/blocks/mbc-bundles-core-snippet/57c94b78-e464-47f4-9403-7ffcfcddb33f",
+      "6835379201813148075": {
+        "type": "shopify://apps/checkout-extention/blocks/pallete/550b6106-115e-4888-87f0-0f9955a00eaf",
         "disabled": false,
         "settings": {}
       },
-      "9258473194686202715": {
-        "type": "shopify://apps/wishit-theme-sections-library/blocks/app-embed/75718c87-6fbb-4711-96bb-441b314b29ba",
+      "1909789295049107559": {
+        "type": "shopify://apps/mbc-bundles/blocks/mbc-bundles-core-snippet/57c94b78-e464-47f4-9403-7ffcfcddb33f",
         "disabled": true,
-        "settings": {
-          "custom_script": "<!-- You can copy paste JS/CSS/HTML scripts here -->",
-          "custom_css": "/* Enter your Custom CSS below without style tag */",
-          "custom_js": "/* Enter your Custom Javascript code below without script tag */"
-        }
+        "settings": {}
       }
     },
     "color_schemes": {
