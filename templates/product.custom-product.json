@@ -27,6 +27,16 @@
           "type": "price",
           "settings": {}
         },
+        "yagi_automatic_discount_helper_auto_discounted_price_product_eAfWeh": {
+          "type": "shopify://apps/yagi-automatic-discount-helper/blocks/auto_discounted_price_product/f78e1611-40b5-4fae-be5c-b92cdb0947ec",
+          "settings": {
+            "show_sale_text": false,
+            "sale_text": "Sale",
+            "hide_original_price": true,
+            "use_compare_at_price": true,
+            "require_login": false
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -60,6 +70,7 @@
         "vendor",
         "title",
         "price",
+        "yagi_automatic_discount_helper_auto_discounted_price_product_eAfWeh",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
