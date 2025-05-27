@@ -27,6 +27,16 @@
           "type": "price",
           "settings": {}
         },
+        "yagi_automatic_discount_helper_auto_discounted_price_product_mY4He4": {
+          "type": "shopify://apps/yagi-automatic-discount-helper/blocks/auto_discounted_price_product/f78e1611-40b5-4fae-be5c-b92cdb0947ec",
+          "settings": {
+            "show_sale_text": true,
+            "sale_text": "Sale",
+            "hide_original_price": true,
+            "use_compare_at_price": true,
+            "require_login": false
+          }
+        },
         "klip_coupons_klip_app_section_product_jgwDyb": {
           "type": "shopify://apps/klip-coupons/blocks/klip-app-section-product/df38e221-ede4-4ad4-b47d-56524361a5be",
           "settings": {
@@ -67,6 +77,7 @@
         "vendor",
         "title",
         "price",
+        "yagi_automatic_discount_helper_auto_discounted_price_product_mY4He4",
         "klip_coupons_klip_app_section_product_jgwDyb",
         "variant_picker",
         "quantity_selector",
