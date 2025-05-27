@@ -27,6 +27,13 @@
           "type": "price",
           "settings": {}
         },
+        "klip_coupons_klip_app_section_product_jgwDyb": {
+          "type": "shopify://apps/klip-coupons/blocks/klip-app-section-product/df38e221-ede4-4ad4-b47d-56524361a5be",
+          "settings": {
+            "margin_top": 10,
+            "margin_bottom": 10
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -49,29 +56,6 @@
           "type": "description",
           "settings": {}
         },
-        "easyspec_product_specification_spec_table_ui_Fxn7aw": {
-          "type": "shopify://apps/easyspec-product-specification/blocks/spec__table_ui/c0f600ef-d35d-4d19-8d15-67ead5db481a",
-          "settings": {
-            "title_text_color": "#212121",
-            "table_title_text_size": 18,
-            "table_title_heading_weight": 400,
-            "specification_key_color": "#878787",
-            "specification_value_color": "#212121",
-            "table_text_size": 14,
-            "table_text_weight": 400,
-            "line_height": 1.4,
-            "table_label_width": 30,
-            "table_value_width": 70,
-            "a_href_link_color": "#0000ea",
-            "tooltip_color": "#878787",
-            "tooltip_width": 16,
-            "border_color": "#e1e0e0",
-            "border_thickness": 1,
-            "border_type": "solid",
-            "show_readmore_button": true,
-            "readmore_button_color": "#2874f0"
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -83,11 +67,11 @@
         "vendor",
         "title",
         "price",
+        "klip_coupons_klip_app_section_product_jgwDyb",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "easyspec_product_specification_spec_table_ui_Fxn7aw",
         "share"
       ],
       "settings": {
