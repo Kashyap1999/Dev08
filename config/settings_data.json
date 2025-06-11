@@ -121,7 +121,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "cart_type": "notification",
+    "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
@@ -145,16 +145,6 @@
       "6835379201813148075": {
         "type": "shopify://apps/checkout-extention/blocks/pallete/550b6106-115e-4888-87f0-0f9955a00eaf",
         "disabled": false,
-        "settings": {}
-      },
-      "14826766009936288847": {
-        "type": "shopify://apps/discounty/blocks/sdk/d65eb522-0d94-499f-9831-d4b3301f5340",
-        "disabled": true,
-        "settings": {}
-      },
-      "4450774348159742141": {
-        "type": "shopify://apps/klip-coupons/blocks/klip-app/df38e221-ede4-4ad4-b47d-56524361a5be",
-        "disabled": true,
         "settings": {}
       }
     },
