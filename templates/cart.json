@@ -19,31 +19,45 @@
     },
     "cart-footer": {
       "type": "main-cart-footer",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 40
-      },
       "blocks": {
         "subtotal": {
           "type": "subtotal",
-          "settings": {
-          }
+          "settings": {}
         },
         "buttons": {
           "type": "buttons",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
         "subtotal",
         "buttons"
-      ]
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "1749648662be679c09": {
+      "type": "apps",
+      "blocks": {
+        "zestard_gift_wrap_giftwrap_cart_block_YMHcCc": {
+          "type": "shopify://apps/zestard-gift-wrap/blocks/giftwrap-cart-block/812385b4-6785-4a00-a40d-150927008708",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "zestard_gift_wrap_giftwrap_cart_block_YMHcCc"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "cart-items",
-    "cart-footer"
+    "cart-footer",
+    "1749648662be679c09"
   ]
 }
