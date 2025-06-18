@@ -27,16 +27,6 @@
           "type": "price",
           "settings": {}
         },
-        "yagi_automatic_discount_helper_auto_discounted_price_product_mY4He4": {
-          "type": "shopify://apps/yagi-automatic-discount-helper/blocks/auto_discounted_price_product/f78e1611-40b5-4fae-be5c-b92cdb0947ec",
-          "settings": {
-            "show_sale_text": false,
-            "sale_text": "Sale",
-            "hide_original_price": true,
-            "use_compare_at_price": true,
-            "require_login": false
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -70,7 +60,6 @@
         "vendor",
         "title",
         "price",
-        "yagi_automatic_discount_helper_auto_discounted_price_product_mY4He4",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -110,10 +99,26 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "17502223213065f4f0": {
+      "type": "apps",
+      "blocks": {
+        "zestard_gift_wrap_giftwrap_product_block_Frm7KG": {
+          "type": "shopify://apps/zestard-gift-wrap/blocks/giftwrap-product-block/812385b4-6785-4a00-a40d-150927008708",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "zestard_gift_wrap_giftwrap_product_block_Frm7KG"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "17502223213065f4f0"
   ]
 }
