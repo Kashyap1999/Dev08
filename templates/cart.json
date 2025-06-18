@@ -50,6 +50,7 @@
       "block_order": [
         "zestard_gift_wrap_giftwrap_cart_block_YMHcCc"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
