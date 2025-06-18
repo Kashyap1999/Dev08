@@ -82,6 +82,21 @@
         "padding_bottom": 12
       }
     },
+    "17502223213065f4f0": {
+      "type": "apps",
+      "blocks": {
+        "zestard_gift_wrap_giftwrap_product_block_Frm7KG": {
+          "type": "shopify://apps/zestard-gift-wrap/blocks/giftwrap-product-block/812385b4-6785-4a00-a40d-150927008708",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "zestard_gift_wrap_giftwrap_product_block_Frm7KG"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -99,26 +114,11 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "17502223213065f4f0": {
-      "type": "apps",
-      "blocks": {
-        "zestard_gift_wrap_giftwrap_product_block_Frm7KG": {
-          "type": "shopify://apps/zestard-gift-wrap/blocks/giftwrap-product-block/812385b4-6785-4a00-a40d-150927008708",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "zestard_gift_wrap_giftwrap_product_block_Frm7KG"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
-    "related-products",
-    "17502223213065f4f0"
+    "17502223213065f4f0",
+    "related-products"
   ]
 }
