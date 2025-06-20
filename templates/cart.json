@@ -39,22 +39,6 @@
         "padding_bottom": 40
       }
     },
-    "1749648662be679c09": {
-      "type": "apps",
-      "blocks": {
-        "zestard_gift_wrap_giftwrap_cart_block_YMHcCc": {
-          "type": "shopify://apps/zestard-gift-wrap/blocks/giftwrap-cart-block/812385b4-6785-4a00-a40d-150927008708",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "zestard_gift_wrap_giftwrap_cart_block_YMHcCc"
-      ],
-      "disabled": true,
-      "settings": {
-        "include_margins": true
-      }
-    },
     "17502222475b5568c5": {
       "type": "apps",
       "blocks": {
@@ -89,7 +73,6 @@
   "order": [
     "cart-items",
     "cart-footer",
-    "1749648662be679c09",
     "17502222475b5568c5",
     "17503338038b7e6aeb"
   ]
