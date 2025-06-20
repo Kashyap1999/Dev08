@@ -41,15 +41,6 @@
     },
     "17503338038b7e6aeb": {
       "type": "apps",
-      "blocks": {
-        "zestard_gift_wrap_giftwrap_cart_block_armeXC": {
-          "type": "shopify://apps/zestard-gift-wrap/blocks/giftwrap-cart-block/812385b4-6785-4a00-a40d-150927008708",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "zestard_gift_wrap_giftwrap_cart_block_armeXC"
-      ],
       "settings": {
         "include_margins": true
       }
