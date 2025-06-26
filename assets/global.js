@@ -1268,20 +1268,46 @@ if (!customElements.get('bulk-add')) {
   customElements.define('bulk-add', BulkAdd);
 }
 
+// const observer = new MutationObserver((mutationsList) => {
+//   for (const mutation of mutationsList) {
+//     if (mutation.type === 'childList') {
+//       const watermark = document.querySelector('.Countdown__Watermark');
+//       if (watermark) {
+//         watermark.remove();
+//         observer.disconnect();
+//         break;
+//       }
+//     }
+//   }
+// });
+
+// observer.observe(document.body, {
+//   childList: true,
+//   subtree: true
+// });
+
 const observer = new MutationObserver((mutationsList) => {
   for (const mutation of mutationsList) {
-    if (mutation.type === 'childList') {
+    if (mutation.type === 'childList' || mutation.type === 'subtree') {
+      // 1. Remove .Countdown__Watermark
       const watermark = document.querySelector('.Countdown__Watermark');
       if (watermark) {
         watermark.remove();
-        observer.disconnect(); // Stop observing once removed
-        break;
+      }
+
+      // 2. Remove parent if .samita-countdown-remaining--text is empty
+      const countdownText = document.querySelector('.samita-countdown-remaining--text');
+      if (countdownText && countdownText.textContent.trim() === '') {
+        const parentLayout = countdownText.closest('.samita_countdown_delivery_mes-layout');
+        if (parentLayout) {
+          parentLayout.remove();
+        }
       }
     }
   }
 });
 
-// Start observing the document body for added nodes
+// Start observing the entire body for changes
 observer.observe(document.body, {
   childList: true,
   subtree: true
