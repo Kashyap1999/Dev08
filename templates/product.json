@@ -41,7 +41,7 @@
         "countdown_sami_app_block_countdown_886iGg": {
           "type": "shopify://apps/countdown-sami/blocks/app-block-countdown/4a43514a-3558-477f-914e-e834a137453e",
           "settings": {
-            "shortcode": "<div class=\"samita-countdown\" data-id=\"false\" data-type=\"\"></div>"
+            "shortcode": "<div class=\"samita-countdown\" data-id=\"6547\" data-type=\"delivery\"></div>"
           }
         },
         "buy_buttons": {
