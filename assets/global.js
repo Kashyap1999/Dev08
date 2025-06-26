@@ -1267,3 +1267,22 @@ class BulkAdd extends HTMLElement {
 if (!customElements.get('bulk-add')) {
   customElements.define('bulk-add', BulkAdd);
 }
+
+const observer = new MutationObserver((mutationsList) => {
+  for (const mutation of mutationsList) {
+    if (mutation.type === 'childList') {
+      const watermark = document.querySelector('.Countdown__Watermark');
+      if (watermark) {
+        watermark.remove();
+        observer.disconnect(); // Stop observing once removed
+        break;
+      }
+    }
+  }
+});
+
+// Start observing the document body for added nodes
+observer.observe(document.body, {
+  childList: true,
+  subtree: true
+});
