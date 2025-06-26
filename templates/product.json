@@ -27,6 +27,12 @@
           "type": "price",
           "settings": {}
         },
+        "custom_liquid_ry4Yf3": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"samita-countdown\" data-id=\"6547\"  data-type=\"delivery\"></div>"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -40,6 +46,7 @@
         },
         "countdown_sami_app_block_countdown_886iGg": {
           "type": "shopify://apps/countdown-sami/blocks/app-block-countdown/4a43514a-3558-477f-914e-e834a137453e",
+          "disabled": true,
           "settings": {
             "shortcode": "<div class=\"samita-countdown\" data-id=\"6547\" data-type=\"delivery\"></div>"
           }
@@ -66,6 +73,7 @@
         "vendor",
         "title",
         "price",
+        "custom_liquid_ry4Yf3",
         "variant_picker",
         "quantity_selector",
         "countdown_sami_app_block_countdown_886iGg",
