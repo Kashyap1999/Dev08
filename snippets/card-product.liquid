@@ -161,6 +161,9 @@
             </a>
           </h3>
           <div class="card-information">
+            <span class="test-created_at">{{ 'Created: ' }} {{ card_product.created_at | date: '%Y-%m-%d' }}</span><br />
+            <span class="test-published_at">{{ 'Published: ' }} {{ card_product.published_at | date: '%Y-%m-%d' }}</span>
+            
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
