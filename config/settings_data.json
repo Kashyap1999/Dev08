@@ -142,20 +142,13 @@
     },
     "content_for_index": [],
     "blocks": {
-      "9776720720251544092": {
-        "type": "shopify://apps/helium-customer-fields/blocks/app-embed/bab58598-3e6a-4377-aaaa-97189b15f131",
-        "disabled": false,
-        "settings": {
-          "registration_form_id": "2qtw58",
-          "edit_account_form_id": "",
-          "edit_account_link_text": "Edit account",
-          "edit_account_heading": "Edit account",
-          "edit_account_back_link_text": "Back to account",
-          "enable_js_api": false
-        }
-      },
       "1909789295049107559": {
         "type": "shopify://apps/mbc-bundles/blocks/mbc-bundles-core-snippet/57c94b78-e464-47f4-9403-7ffcfcddb33f",
+        "disabled": false,
+        "settings": {}
+      },
+      "17507623295475902178": {
+        "type": "shopify://apps/test-app/blocks/testing/f13a9a6d-9d3f-475c-ac37-bba3fe4c5321",
         "disabled": false,
         "settings": {}
       }
